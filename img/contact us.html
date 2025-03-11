@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Contact Us | Visit Al-Ula</title>
+    <link rel="icon" type="image/x-icon" href="alula-logo.png">
+    <link rel="stylesheet" href="al-ula.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Quattrocento+Sans&display=swap" rel="stylesheet">
+    <style>
+        .header{
+            min-height: 50vh;/*the hight of the image"length"*/
+            background-image:url(img/contact-back.jpg);
+        }
+    </style>
+    <script>
+        function validateForm() {
+          var name = document.forms["Form"]["name"].value;
+          var email = document.forms["Form"]["email"].value;
+          var emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+          if (name == "" || email == "") {
+            alert("Please fill out all fields.");
+            return false;
+          }
+          if (!emailRegex.test(email)) {
+            alert("Please enter a valid email address.");
+            return false;
+          }
+          return true;
+        }
+      </script>
+</head>
+<body>
+    
+    <!---header--->
+    
+    <header class="header">
+        <nav>
+            <a href="#"><img src="img\alula-logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <ion-icon name="close-outline" class="log" onclick="hideMenu()"></ion-icon>
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="hotels.html">HOTELS</a></li>
+                    <li><a href="Restaurants.html">RESTAURANTS</a></li>
+                    <li><a href="Landmarks.html">LANDMARKS</a></li>
+                    <li><a href="contact us.html">CONTACT</a></li>
+                    <li><a href="About us.html">ABOUT</a></li>
+                </ul>
+            </div>
+            <ion-icon name="menu-outline" class="log" onclick="showMenu()"></ion-icon>
+        </nav>
+        <div class="text-box" style="top:60%">
+            <h1>Contact Us</h1>
+            <p> we would love to respond to your queries and help you succeed,<br> feel free to get in touch with us</p>
+        </div>
+    </header>
+
+    <!---content--->
+    <section >
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114177.17676185946!2d38.04329924460599!3d26.583195209353132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15a5ab96a9136819%3A0x39bae58691885d6!2z2KfZhNi52YTYpw!5e0!3m2!1sar!2ssa!4v1681650206066!5m2!1sar!2ssa" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="container">
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Send Your Request</h3>
+                    <form name="Form" onsubmit="return validateForm()">
+                        <div class = "input-row" >
+                            <div class = "input-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Ahmed Alfaisal" required>
+                            </div>
+                            <div class ="input-group">
+                                <label for="phone">Phone</label >
+                                <input type="tel" placeholder="+966 050 7492" id="phone" name="phone" pattern="^((00966)|(\+966)|(0))[5][0-9]{8}$" required>
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="AhmedAlfaisal@gmail.com" required>
+                            </div >
+                            <div class="input-group">
+                                <label >Subject</label >
+                                <input type="text" placeholder="Subject" required>
+                            </div>
+                        </div>
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="your message" required></textarea>
+                        <button type="submit">SEND</button>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h3>Reach Us</h3>
+                    <table>
+                        <tr>
+                            <td><ion-icon name="mail" style="font-size: 25px;"></ion-icon></td>
+                            <td>Email</td>
+                            <td><a href="mailto:visitAlula@gmail.com" style="color: #fff;">visitAlula@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                            <td><ion-icon name="call" style="font-size: 25px;"></ion-icon></td>
+                            <td>phone</td>
+                            <td>920023209</td>
+                        </tr>
+                        <tr>
+                            <td><ion-icon name="location" style="font-size: 25px;"></ion-icon></td>
+                            <td>Address</td>
+                            <td style="line-height: 23px;"><address>King Faisal Road<br>AlSkhirat, 43512<br>Alula, Saudi Arabia</address></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---footer--->
+    <footer class="footer">
+        <h4>About Us</h4>
+        <p>this website was created for web course project</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/ExperienceAlUla/" target="_blank"><ion-icon name="logo-facebook" style="color: rgb(44, 114, 219);"></ion-icon></a>
+            <a href="https://www.instagram.com/alula_saudi_arabia/" target="_blank"><ion-icon name="logo-instagram" style="color: rgb(235, 48, 191);"></ion-icon></a>
+            <a href="https://twitter.com/RCU_SA" target="_blank"><ion-icon name="logo-twitter" style="color: rgb(88, 152, 249);"></ion-icon></a>
+            <a href="https://www.linkedin.com/company/the-royal-commission-for-alula" target="_blank"><ion-icon name="logo-linkedin" style="color: rgb(12, 76, 172);"></ion-icon></a>
+            <a href="https://github.com/" target="_blank"><ion-icon name="logo-github" style="color: #000;"></ion-icon></a>
+            <a href="https://www.youtube.com/c/ExperienceAlUla/" target="_blank"><ion-icon name="logo-youtube" style="color: rgb(255, 0, 0);"></ion-icon></a>
+        </div>
+        <p>Made by <a href="About us.html">click here for more</a></p>
+    </footer>
+    
+    <!------javaScript for toggle menu------>
+    <script>
+        var navLinks =  document.getElementById("navlinks");
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+    </script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
