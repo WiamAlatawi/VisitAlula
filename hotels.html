@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Hotels | Visit Al-Ula</title>
+    <link rel="icon" type="image/x-icon" href="alula-logo.png">
+    <link rel="stylesheet" href="al-ula.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Quattrocento+Sans&display=swap" rel="stylesheet">
+    <style>
+        nav{
+            width: 92%;
+            position: absolute;
+        }
+        .header{
+            width: 100%;
+            min-height: 100vh;
+            background-image:none;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <!---header--->
+    
+    <header class="header">
+        <video autoplay loop muted plays-inline class="backvid"><source src="Untitled video - Made with Clipchamp.mp4" type="video/mp4"></video>
+        <nav>
+            <a href="#"><img src="img\alula-logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <ion-icon name="close-outline" class="log" onclick="hideMenu()"></ion-icon>
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="hotels.html">HOTELS</a></li>
+                    <li><a href="Restaurants.html">RESTAURANTS</a></li>
+                    <li><a href="Landmarks.html">LANDMARKS</a></li>
+                    <li><a href="contact us.html">CONTACT</a></li>
+                    <li><a href="About us.html">ABOUT</a></li>
+                </ul>
+            </div>
+            <ion-icon name="menu-outline" class="log" onclick="showMenu()"></ion-icon>
+        </nav>
+        <div class="text-box">
+            <h1>Hotels</h1>
+            <p>Book your very own oasis among the tranquil AlUla desert.</p>
+        </div>
+    </header>
+    
+    <!---write your code here--->
+
+    <section class="tours">
+        <div>
+            <div>
+                <h1>HABITAS ALULA</h1>
+                <div class="line"></div>
+                <p>A trailblazer in sustainable hospitality, Habitas brings luxury living to AlUla in an environmentally conscious way. 
+                    Nestled within an ancient oasis in the desert canyons of the Ashar Valley, 
+                    find yourself surrounded by sandstone cliffs and palm groves.</p>
+            </div>
+            <div>
+            <div class="image-gallery">
+                <img src="img\HabitasAlUla1.jpg">
+                <img src="img\HabitasAlUla2.jpg">
+                <img src="img\HabitasAlUla3.jpg">
+                <img src="img\HabitasAlUla4.jpg">
+            </div>
+           </div>
+        </div>
+    </section>
+
+    <section class="tours">
+        <div>
+            <div>
+                <h1>BANYAN TREE ALULA</h1>
+                <div class="line"></div>
+                <p>A tranquil desert sanctuary, Banyan Tree AlUla invites you to discover an uncharted new world. 
+                Inspired by the mysterious and exciting natural surroundings of the Ashar Valley, no two stays are ever the same.</p>
+            </div>
+            <div>
+                <div class="image-gallery">
+                    <img src="img\BANYAN1.webp">
+                    <img src="img\BANYAN2.webp">
+                    <img src="img\BANYAN3.jpg">
+                    <img src="img\BANYAN4.jpg">
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <section class="tours">
+        <div>
+            <div>
+                <h1>26° NORTH</h1>
+                <div class="line"></div>
+                <p>26° North luxury campsite offers a fabulous glamping experience surrounded by acres of orchards and stunning wind-carved rock formations. 
+                    It's also an ideal base for exploring some of AlUla's most dramatic desert landscape.</p>
+            </div>
+            <div>
+                <div class="image-gallery">
+                    <img src="img\26° NORTH1.jpg">
+                    <img src="img\26° NORTH2.jpg">
+                    <img src="img\26° NORTH3.jpg">
+                    <img src="img\26° NORTH4.jpg">
+                </div>
+            </div>
+       </div>
+    </section>
+
+    <!---footer--->
+    <footer class="footer">
+        <h4>About Us</h4>
+        <p>this website was created for web course project</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/ExperienceAlUla/" target="_blank"><ion-icon name="logo-facebook" style="color: rgb(44, 114, 219);"></ion-icon></a>
+            <a href="https://www.instagram.com/alula_saudi_arabia/" target="_blank"><ion-icon name="logo-instagram" style="color: rgb(235, 48, 191);"></ion-icon></a>
+            <a href="https://twitter.com/RCU_SA" target="_blank"><ion-icon name="logo-twitter" style="color: rgb(88, 152, 249);"></ion-icon></a>
+            <a href="https://www.linkedin.com/company/the-royal-commission-for-alula" target="_blank"><ion-icon name="logo-linkedin" style="color: rgb(12, 76, 172);"></ion-icon></a>
+            <a href="https://github.com/" target="_blank"><ion-icon name="logo-github" style="color: #000;"></ion-icon></a>
+            <a href="https://www.youtube.com/c/ExperienceAlUla/" target="_blank"><ion-icon name="logo-youtube" style="color: rgb(255, 0, 0);"></ion-icon></a>
+        </div>
+        <p>Made by <a href="About us.html">click here for more</a></p>
+    </footer>
+    
+    <!------javaScript for toggle menu------>
+    <script>
+        var navLinks =  document.getElementById("navlinks");
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    
+</body>
+</html>
