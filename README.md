@@ -13,7 +13,7 @@ VisitAlUla is a fully functional static website built with HTML and CSS. It prov
 - Landmarks.html — Explore Al Ula’s major historical & natural landmarks  
 - Hotels.html — Accommodation options  
 - Restaurants.html — Dining recommendations  
-- About us.html — About the project and region  
+- About us.html — The contributors names 
 - Contact us.html — Contact page  
 - al‑ula.css — Stylesheet for consistent design  
 - img/ — Folder containing images used in the site  
@@ -21,8 +21,7 @@ VisitAlUla is a fully functional static website built with HTML and CSS. It prov
 
 ## 🛠️ Built With
 - HTML5  
-- CSS3  
-- (Optional) Clipchamp for promotional video  
+- CSS3   
 - Responsive design principles
 
 ## 🎯 Features
